@@ -4,60 +4,28 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-		<title>Robert Varela</title>
-		<link rel="shortcut icon" type="image/x-icon" href="assets/rv-logo.jpg">
-
+		<title>Game Boy</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/bubble_logo.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/laptopmockup.css">
-  </head>
-  <body>
-
-    <div id="particles-js"></div>
-
-		<ul class="social">
-			<li><a href="https://www.linkedin.com/in/rvarela11" target="_blank" aria-label="Visit my LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/rvarela11" target="_blank" aria-label="Visit my Github"><i class="fa fa-github"></i></a></li>
-			<li><a href="https://codepen.io/rvarela11/" target="_blank" aria-label="Visit my Codepen"><i class="fa fa-codepen"></i></a></li>
-			<li><a href="assets/resume.pdf" target="_blank" aria-label="Checkout my resume"><i class="fa fa-file-pdf-o"></i></a></li>
-		</ul>
-
-		<section class="home">
-			<div>
-
-			</div>
-			<div>
-				<header>
-					<div class="name">Robert Varela</div>
-					<div class="home__title">Front-End Developer</div>
-				</header>
-
-				<div class="home__nav">
-					<ul>
-						<li><a href="#about">My Story</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section class="about" id="about">
-			<div class="name">About Me</div>
-			<div class="about__text">
-				<p>
-					Over the past 3 years, I have grown my knowledge and love for being a software developer. <span>Front end development</span> is a passion of mine because I get to build visual components - a website, an app - that can have an impact on others. If they are not satisfied then I have not done my job right and that is what I strive for.
-				</p>
-			</div>
-		</section>
-
-		<section id="projects" class="projects"></section>
-
-		<script type="text/javascript" src="js/main.js"></script>
-		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="text/javascript" src="js/particles.js"></script>
+  	</head>
+  	<body>
+		<div class="game-boy-wrapper">
+			<main class="game-boy">
+					<div class="game-boy__screen-container">
+						<div class="game-boy__screen"></div>
+					</div>
+					<h1 class="game-boy__logo">Game Boy</h1>
+					<div class="game-boy__dashboard">
+						<h1 class="game-boy__dashboard-game-title">Bubblicious</h1>
+						<button id="game-boy__dashboard-start-button" class="game-boy__dashboard-button">Start</button>
+					</div>
+					<div class="game-boy__controls">
+						<div id="game-boy__controls-slider-label"></div>
+						<input type="range" min="1" max="10" value="1" id="game-boy__controls-slider">
+					</div>
+				</main>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
