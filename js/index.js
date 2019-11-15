@@ -124,7 +124,7 @@ class Game {
 
     getSpeedToAddDot = () => Math.floor(this.speedToCreateDot - (this.getSpeed() * 50));
 
-    getSpeedToDropDot = () => Math.floor((this.speedToCreateDot / this.getSpeed()) / 2 );
+    getSpeedToDropDot = () => Math.floor((this.speedToCreateDot / (this.getSpeed()) / 2));
 
     getSpeed = () => parseInt(this.slider.value, 10);
   
